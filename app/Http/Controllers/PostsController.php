@@ -25,7 +25,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -36,7 +36,27 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, array(
+                'title' => 'required|max:255',
+                'label' =>  'required',
+                'body'  =>  'required',
+                'source'    => 'required'
+            ));
+
+        //Store in database....
+        $post = new Post;
+
+        $post->title = $request->title;
+        $post->label = $request->label;
+        $post->body = $request->body;
+        $post->source = $request->source;
+
+        $post->save();
+
+        Session::flash('success', 'The blog post is successfully saved !!');
+
+        //Redirect to show........
+        return redirect()->route('posts.show', $post->id);
     }
 
     /**
@@ -47,7 +67,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        return view('posts.show')->withPost($post);
     }
 
     /**

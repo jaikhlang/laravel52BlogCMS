@@ -12,6 +12,7 @@
 */
 
 Route::get('/','PagesController@getIndex');
+Route::resource('posts', 'PostsController');
 
 /*
 |--------------------------------------------------------------------------
