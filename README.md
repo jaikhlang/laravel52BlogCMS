@@ -11,14 +11,16 @@ Laravel 5.2 basic blog CMS. Its the most easiest or beginer level learning appro
 1. Create model Post
 2. Create resource controller PostsController
 3. Create table, Build schemma like(id, title, label, slug, body, timestamp) & Migrate
-4. Create & Store, Read, Edit & Update, Destroy  (CRUD)
-5. Authentications
+4. Create controller LabelsController  (for category search functionality.)
+5. Create & Store, Read, Edit & Update, Destroy  (CRUD)
+6. Authentications
 
 #Frontend Sections
 1. Pagination
 2. Layouts, Partials (Know about using blade)
 3. Styles (CSS3, Bootstraps, jQuery)
 4. Adding Editor for Create & Edit
+5. Adding Error Pages Like 404
 
 
 #

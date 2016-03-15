@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Home')
+@section('title', 'Label')
 
 
 @section('content')
@@ -20,7 +20,7 @@
             @foreach($posts as $post)
             <article class="blogPost">
                 
-                <h3 class="text-uppercase">{{ Html::link('posts/'.$post->slug, $post->title) }}</h3>
+                <h3 class="text-uppercase">{{ Html::link('/'.$post->slug, $post->title) }}</h3>
 
                 <p class="postMeta"> 
                     <i class="fa fa-hand-o-right"></i> Created: <span> {{ date('M j, Y h:ia', strtotime($post->created_at)) }}</span> 
@@ -28,7 +28,7 @@
                 </p>
 
                 <div class="postBody">{{ substr($post->body, 0, 400) }}</p>
-                <p>{!! Html::linkRoute('posts.show','Read More', array($post->id), array('class' => 'btn btn-default btn-xs')) !!}</p>
+                <p>{!! Html::linkRoute('posts.show','Read More', array($post->slug), array('class' => 'btn btn-default btn-xs')) !!}</p>
 
             </article>
 

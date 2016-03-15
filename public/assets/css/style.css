@@ -1,0 +1,192 @@
+/**
+*	HEADER & NAVIGATION SECTION
+*	_________________________________________________________________________________________________
+**/
+.header{
+	background-color: #eee;
+	margin: 0px !important;
+	padding: 10px 0px;
+	overflow: hidden;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+.header h2{
+	color: darkcyan;
+}
+nav {
+	margin-top: 1px;
+	background-color: transparent;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-bottom-style: double;
+	border-bottom-color: #ddd;
+}
+.nav-list{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+.nav-list a{
+	text-decoration: none;
+}
+.nav-list li{
+	display: inline-block;
+	padding: 6px 15px;
+	margin-right: -4px;
+
+	transition: ease-in all 800ms;
+	  -moz-transition: ease-in all 800ms;
+	  -webkit-transition: ease-in all 800ms;
+	  -o-transition: ease-in all 800ms;
+}
+.nav-list li:hover{
+	background-color: #eee;
+
+	transition: ease-in all 800ms;
+	  -moz-transition: ease-in all 800ms;
+	  -webkit-transition: ease-in all 800ms;
+	  -o-transition: ease-in all 800ms;
+}
+.handle {
+	width: 100%;
+	background-color: transparent;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width: 580px){
+	.nav-list{
+		max-height: 0;
+	}
+	.showing {
+		max-height: 20em;
+		border-top-style: double;
+		border-top-color: #ddd;
+	}
+	.nav-list li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		text-align: left;
+	}
+	.handle{
+		display: block;
+	}
+}
+
+/**
+*	GOOGLE ADSENSE ADVERTISEMENT BANNER
+*	_________________________________________________________________________________________________
+**/
+
+.googleAd{
+	background-color: rgba(221, 221, 221, 0.09);
+	color: darkgrey;
+	padding: 40px 0px;
+	margin: 2px 0px;
+}
+.googleAdSidebar{
+	background-color: rgba(221, 221, 221, 0.09);
+	color: darkgrey;
+	padding: 150px 0px;
+	margin: 2px 0px;
+	min-height: 300px;
+}
+
+
+
+/**
+*	BLOG POST SECTION
+*	_________________________________________________________________________________________________
+**/
+.blogPost h3 a,
+.blogPost h3 a:active,
+.blogPost h3 a:link,
+.blogPost h3 a:visited,
+.blogPost h3 a:hover {
+	text-decoration: none;
+	color: darkcyan;
+}
+.postMeta {
+	color: dimgrey;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: lighter;
+	border-bottom: 1px solid #ddd;
+}
+
+/**
+*	FOOTER SECTION
+*	_________________________________________________________________________________________________
+**/
+.readLinks ul li a,
+.readLinks ul li a:link,
+.readLinks ul li a:active,
+.readLinks ul li a:visited{
+	font-weight: lighter;
+	font-size: 12px;
+	text-decoration: none;
+	color: #aaa;
+}
+.readLinks ul li a:hover{
+	text-decoration: none;
+	border-bottom: 1px dotted #ddd;
+}
+.footer{
+	border-top-style: double; 
+	border-top-color: #ddd;
+	overflow: hidden;
+	padding: 4px 0px 0px 0px;
+}
+.footer p a:hover{
+	border-bottom: 1px dotted #ddd;
+}
+
+
+
+
+
+
+/**
+*	GLOBAL SETTINGS, WRAPPERS
+*	_________________________________________________________________________________________________
+**/
+body{
+	background-color: #eee!important;
+}
+.container{
+	background-color: #fff;
+	padding: 0px!important;
+	border-radius: 14px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+		-webkit-box-shadow:0 0 10px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 580px){
+	html, body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.container{
+		margin: 2px 10px !important;
+		border-radius: 0px!important;
+	}
+	.header{
+		
+		border-radius: 0px;
+	}
+}
