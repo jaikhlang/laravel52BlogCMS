@@ -2,7 +2,7 @@
 Laravel 5.2 basic blog CMS. Its the most easiest or beginer level learning approach. <hr>
 
 #Initial Setups
-1. Download Laravel
+1. Download Laravel Framework (https://laravel.com/docs/5.2#installation)
 2. Setup your environment (.env & Database)
 3. Install laravelcollective HTML. <br/>Get from: <a href="https://laravelcollective.com/docs/5.2/html">laravelcollective.com/docs/5.2/html</a>
 4. Install sluggify for slugging functionality.<br/>Get from: <a href="https://github.com/cviebrock/eloquent-sluggable">github.com/cviebrock/eloquent-sluggable</a>
