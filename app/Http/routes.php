@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/','PagesController@getIndex');
-Route::resource('posts', 'PostsController');
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -26,5 +23,6 @@ Route::resource('posts', 'PostsController');
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/','PagesController@getIndex');
+	Route::resource('posts', 'PostsController');
 });

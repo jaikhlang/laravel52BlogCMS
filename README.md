@@ -22,6 +22,6 @@ Laravel 5.2 basic blog CMS. Its the most easiest or beginer level learning appro
 
 
 #
-<em>I would luv know your suggestion if you want to add somemore feature.</em><br/>
+<em>I would luv to know your suggestion if you want to add somemore feature.</em><br/>
 Download the repository for complete source code from: <a href="https://github.com/jklangbrahma/laravel52BlogCMS">here.</a> <br/>
 Write me on @facebook https://www.facebook.com/jaikhlang.brahma1

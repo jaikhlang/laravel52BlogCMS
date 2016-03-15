@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	background-color: #eee!important;
+}
+header {
+	background-color: red;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border-bottom: 4px solid #fff;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+header li {
+	padding: 2px 40px!important;
+}
+header li:nth-child(1){
+	margin-left: 0px;
+}
+header li:hover {
+	background-color: #eee;
+}
+header li a,
+header li a:active,
+header li a:link,
+header li a:visited
+header li a:hover {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: darkcyan;
+}
+
+
+.appheader{
+	margin: 10px;
+	border-bottom-style: double;
+	border-bottom-color: #ddd;
+}
