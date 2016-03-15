@@ -1,11 +1,11 @@
 # laravel52BlogCMS
-Laravel 5.2 basic blog CMS.
+Laravel 5.2 basic blog CMS. Its the most easiest or beginer level learning approach. <hr>
 
 #Initial Setups
 1. Download Laravel
 2. Setup your environment (.env & Database)
-3. Install laravelcollective HTML
-4. Install sluggify for slugging functionality.
+3. Install laravelcollective HTML. <br/>Get from: <a href="https://laravelcollective.com/docs/5.2/html">laravelcollective.com/docs/5.2/html</a>
+4. Install sluggify for slugging functionality.<br/>Get from: <a href="https://github.com/cviebrock/eloquent-sluggable">github.com/cviebrock/eloquent-sluggable</a>
 
 #Backend Sections
 1. Create model Post
@@ -22,5 +22,6 @@ Laravel 5.2 basic blog CMS.
 
 
 #
+<em>I would luv know your suggestion if you want to add somemore feature.</em>
 Download the repository for complete source code.<br/>
-You can seek hep on @facebook https://www.facebook.com/jaikhlang.brahma1
+Write me on @facebook https://www.facebook.com/jaikhlang.brahma1
