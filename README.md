@@ -16,12 +16,12 @@ Laravel 5.2 basic blog CMS. Its the most easiest or beginer level learning appro
 
 #Frontend Sections
 1. Pagination
-2. Layouts, Partials
+2. Layouts, Partials (Know about using blade)
 3. Styles (CSS3, Bootstraps, jQuery)
 4. Adding Editor for Create & Edit
 
 
 #
-<em>I would luv know your suggestion if you want to add somemore feature.</em>
-Download the repository for complete source code.<br/>
+<em>I would luv know your suggestion if you want to add somemore feature.</em><br/>
+Download the repository for complete source code from: <a href="https://github.com/jklangbrahma/laravel52BlogCMS">here.</a> <br/>
 Write me on @facebook https://www.facebook.com/jaikhlang.brahma1
