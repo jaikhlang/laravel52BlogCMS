@@ -6,7 +6,8 @@
 			<p class="text-center">CREATE NEW POST</p>
 		</div>
 		<div class="col-md-12">
-
+			@include('partial._message')
+			
 			{!! Form::open(['route' => 'posts.store', 'method' => 'POST']) !!}
 				{{ Form::label('title', 'TITLE:') }}
 				{{ Form::text('title', null, array('class' => 'form-control')) }}

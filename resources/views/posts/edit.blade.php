@@ -12,7 +12,8 @@
 			</p>
 		</div>
 		<div class="col-md-12">
-
+			@include('partial._message')
+			
 			{!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT']) !!}
 				{{ Form::label('title', 'TITLE:') }}
 				{{ Form::text('title', null, array('class' => 'form-control')) }}

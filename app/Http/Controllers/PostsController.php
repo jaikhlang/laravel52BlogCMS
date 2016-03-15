@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Post;
+use Session;
 
 class PostsController extends Controller
 {
@@ -42,7 +43,6 @@ class PostsController extends Controller
                 'title' => 'required|max:255',
                 'label' =>  'required',
                 'body'  =>  'required',
-                'source'    => 'required'
             ));
 
         //Store in database....
@@ -94,7 +94,26 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, array(
+                'title' => 'required|max:255',
+                'label' =>  'required',
+                'body'  =>  'required',
+            ));
+
+        //Store in database....
+        $post = Post::find($id);
+
+        $post->title = $request->title;
+        $post->label = $request->label;
+        $post->body = $request->body;
+        $post->source = $request->source;
+
+        $post->save();
+
+        Session::flash('success', 'The changes in blog post is successfully saved !!');
+
+        //Redirect to show........
+        return redirect()->route('posts.show', $post->id);
     }
 
     /**
@@ -105,6 +124,8 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+        return redirect()->route('posts.index')->with(['message','Successfully Deleted!!']);
     }
 }
