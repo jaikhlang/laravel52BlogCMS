@@ -7,6 +7,11 @@
 	<div class="appheader">
 		<p class="text-center">INDEX OF BLOG POSTS</p>
 	</div>
+	<div class="appheader">
+		<p class="text-center">
+		{{ Html::link('/', 'GO TO HOMEPAGE', array('class' => 'btn btn-default btn-xs') ) }}
+		</p>
+	</div>
 
 	<div class="col-md-12">
 
@@ -27,12 +32,16 @@
 					<td>{{ $post->title }}</td>
 					<td>{{ $post->label }}</td>
 					<td>{{ $post->created_at }}</td>
-					<td><a href="#" class="btn btn-default btn-xs">View</a> <a href="#" class="btn btn-default btn-xs">Edit</a></td>
+					<td>
+						{{ Html::linkRoute('posts.show', 'VIEW', $post->id, array('class' => 'btn btn-default btn-xs') ) }}
+						<!--a href="#" class="btn btn-default btn-xs">View</a-->
+						{{ Html::linkRoute('posts.edit', 'EDIT', $post->id, array('class' => 'btn btn-default btn-xs') ) }}
+					</td>
 				</tr>
 				@endforeach
 			</tbody>
 		</table>
-		
+
 	</div>
 
 </div>
