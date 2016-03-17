@@ -124,6 +124,37 @@ nav {
 	font-weight: lighter;
 	border-bottom: 1px solid #ddd;
 }
+.postSource {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+/**
+*	SIDEBAR SECTIONS
+*	_________________________________________________________________________________________________
+**/
+.sidebarWidget h5{
+	padding: 2px 0px;
+	border-top-style: double;
+	border-bottom-style: double;
+	border-color: #ddd;
+}
+
+.sidebarWidget{
+	padding-bottom: 15px;
+}
+
+.sidebarWidget p {
+	padding-top: 10px;
+}
+.sidebarWidget small {
+	font-style: italic;
+}
+.sidebarWidget .btn{
+	margin-bottom: 4px;
+}
+
 
 /**
 *	FOOTER SECTION

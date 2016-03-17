@@ -28,7 +28,7 @@
                 </p>
 
                 <div class="postBody">{{ substr($post->body, 0, 400) }}</p>
-                <p>{!! Html::linkRoute('posts.show','Read More', array($post->slug), array('class' => 'btn btn-default btn-xs')) !!}</p>
+                <p>{{ Html::link('/'.$post->slug, ' Read More', ['class' => 'btn btn-default btn-xs']) }}</p>
 
             </article>
 

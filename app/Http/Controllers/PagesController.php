@@ -15,4 +15,12 @@ class PagesController extends Controller
     	$labels = Post::orderBy('id', 'desc')->select('label')->distinct()->get();
     	return view('pages.home')->withPosts($posts)->withLabels($labels);
     }
+
+   /* public function getPost($slug){
+    	$post = Post::findBySlug($slug);
+    	$labels = Post::orderBy('id', 'desc')->select('label')->distinct()->get();
+    	return view('posts.page')->withPost($post)->withLabels($labels);
+
+    }
+    */
 }
