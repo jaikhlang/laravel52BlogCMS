@@ -1,0 +1,57 @@
+@extends('layout.main')
+
+@section('title', 'Blog-Single')
+
+@section('content')
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="googleAd">
+            <p class="text-center"> Google Adsense Ad.</p>
+        </div>
+        <!--end of google adsense-->
+        <div class="clearfix"></div><hr>
+
+
+        
+        <div class="col-md-9">
+
+            <article class="blogPost">
+                
+                <h3 class="text-uppercase">{{ Html::link('blog/'.$post->slug, $post->title) }}</h3>
+
+                <p class="postMeta"> 
+                    <i class="fa fa-hand-o-right"></i> Created: <span> {{ date('M j, Y h:ia', strtotime($post->created_at)) }}</span> 
+                    <i class="fa fa-heart-o"></i> Label: <span>{{ $post->label }}</span>
+                </p>
+
+                <div class="postBody">{{ $post->body }}</p>
+
+            </article>
+
+            <div class="googleAd">
+                <p class="text-center"> Google Adsense Ad.</p>
+            </div>
+
+        </div>
+        <!--end of main posts area-->
+
+
+
+        <div class="col-md-3">
+            <div class="well">
+                @foreach($labels as $label)
+                {{ Html::link('label/'.$label->label, $label->label, array('class' => 'btn btn-default btn-xs')) }}
+                @endforeach
+            </div>
+        </div>
+        <!--end of sidebar area-->
+
+
+    </div>
+    <!--end of col-md-12-->
+</div>
+<!--end of row-->
+
+@endsection

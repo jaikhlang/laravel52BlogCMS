@@ -20,7 +20,7 @@
             @foreach($posts as $post)
             <article class="blogPost">
                 
-                <h3 class="text-uppercase">{{ Html::link('/'.$post->slug, $post->title) }}</h3>
+                <h3 class="text-uppercase">{{ Html::link('blog/'.$post->slug, $post->title) }}</h3>
 
                 <p class="postMeta"> 
                     <i class="fa fa-hand-o-right"></i> Created: <span> {{ date('M j, Y h:ia', strtotime($post->created_at)) }}</span> 
@@ -28,7 +28,7 @@
                 </p>
 
                 <div class="postBody">{{ substr($post->body, 0, 400) }}</p>
-                <p>{{ Html::link('/'.$post->slug, ' Read More', ['class' => 'btn btn-default btn-xs']) }}</p>
+                <p>{{ Html::link('blog/'.$post->slug, ' Read More', ['class' => 'btn btn-default btn-xs']) }}</p>
 
             </article>
 

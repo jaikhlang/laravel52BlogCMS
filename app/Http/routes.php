@@ -24,7 +24,8 @@
 
 Route::group(['middleware' => ['web']], function () {
     Route::get('/','PagesController@getIndex');
-    //Route::get('/{slug}', 'PagesController@getPost');
+    
+    Route::get('blog/{slug}', 'BlogController@getSingle');
     
     Route::get('label', 'LabelsController@getRedirect');
     Route::get('label/{id}', 'LabelsController@getIndex');
