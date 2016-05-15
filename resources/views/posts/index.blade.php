@@ -7,11 +7,6 @@
 	<div class="appheader">
 		<p class="text-center">INDEX OF BLOG POSTS</p>
 	</div>
-	<div class="appheader">
-		<p class="text-center">
-		{{ Html::link('/', 'GO TO HOMEPAGE', array('class' => 'btn btn-default btn-xs') ) }}
-		</p>
-	</div>
 
 	<div class="col-md-12">
 

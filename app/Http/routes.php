@@ -23,11 +23,26 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
+
+
+
+    Route::resource('posts', 'PostsController');
+
     Route::get('/','PagesController@getIndex');
-    
-    Route::get('blog/{slug}', 'BlogController@getSingle');
-    
-    Route::get('label', 'LabelsController@getRedirect');
+  
+    Route::get('blog/{slug}', [ 'as' => 'blog.single', 'uses' => 'BlogController@getSingle']);
     Route::get('label/{id}', 'LabelsController@getIndex');
-	Route::resource('posts', 'PostsController');
+
+    Route::get('blog', ['as' => 'blog.index', 'uses' => 'BlogController@getIndex']);
+    Route::get('label', 'LabelsController@getRedirect');
+
+
+    //Auth Routes
+    Route::auth();
+
+	Route::get('admin', 'HomeController@index');
+    
+	
 });
+
+
